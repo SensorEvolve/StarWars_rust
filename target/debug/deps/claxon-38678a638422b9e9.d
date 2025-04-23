@@ -1,0 +1,11 @@
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/deps/libclaxon-38678a638422b9e9.rmeta: /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/crc.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/error.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/frame.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/input.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/metadata.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/subframe.rs
+
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/deps/claxon-38678a638422b9e9.d: /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/crc.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/error.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/frame.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/input.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/metadata.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/subframe.rs
+
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/lib.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/crc.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/error.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/frame.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/input.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/metadata.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/claxon-0.4.3/src/subframe.rs:

@@ -1,0 +1,11 @@
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/deps/libfdeflate-3be7023a1ac9decf.rmeta: /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/compress.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/decompress.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/huffman.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/tables.rs
+
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/deps/libfdeflate-3be7023a1ac9decf.rlib: /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/compress.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/decompress.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/huffman.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/tables.rs
+
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/deps/fdeflate-3be7023a1ac9decf.d: /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/compress.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/decompress.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/huffman.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/tables.rs
+
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/lib.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/compress.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/decompress.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/huffman.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.6/src/tables.rs:

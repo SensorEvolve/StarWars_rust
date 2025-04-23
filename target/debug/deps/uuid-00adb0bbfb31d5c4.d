@@ -1,0 +1,12 @@
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/deps/libuuid-00adb0bbfb31d5c4.rmeta: /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/builder.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/error.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/parser.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/fmt.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/timestamp.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/external.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/macros.rs
+
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/deps/uuid-00adb0bbfb31d5c4.d: /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/builder.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/error.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/parser.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/fmt.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/timestamp.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/external.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/macros.rs
+
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/lib.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/builder.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/error.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/parser.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/fmt.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/timestamp.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/external.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/uuid-1.11.0/src/macros.rs:

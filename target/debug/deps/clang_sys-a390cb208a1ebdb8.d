@@ -1,0 +1,14 @@
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/deps/libclang_sys-a390cb208a1ebdb8.rmeta: /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/support.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/link.rs /Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/macros.rs /Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/common.rs /Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/dynamic.rs
+
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/deps/libclang_sys-a390cb208a1ebdb8.rlib: /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/support.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/link.rs /Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/macros.rs /Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/common.rs /Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/dynamic.rs
+
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/deps/clang_sys-a390cb208a1ebdb8.d: /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/support.rs /Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/link.rs /Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/macros.rs /Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/common.rs /Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/dynamic.rs
+
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/lib.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/support.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.8.1/src/link.rs:
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/macros.rs:
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/common.rs:
+/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out/dynamic.rs:
+
+# env-dep:OUT_DIR=/Users/ethereum/Developer/NvimProjects/snakeRUST/target/debug/build/clang-sys-11c4a0f0d09835fb/out
