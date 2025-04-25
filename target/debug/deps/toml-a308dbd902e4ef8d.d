@@ -1,0 +1,13 @@
+/Users/ethereum/Developer/StarWars_rust/target/debug/deps/libtoml-a308dbd902e4ef8d.rmeta: /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/map.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/value.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/datetime.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/ser.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/de.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/tokens.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/macros.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/spanned.rs
+
+/Users/ethereum/Developer/StarWars_rust/target/debug/deps/toml-a308dbd902e4ef8d.d: /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/map.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/value.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/datetime.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/ser.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/de.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/tokens.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/macros.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/spanned.rs
+
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/lib.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/map.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/value.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/datetime.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/ser.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/de.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/tokens.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/macros.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.5.11/src/spanned.rs:

@@ -1,11 +1,11 @@
 use ggez::{
-    audio::{AudioContext, Source},
+    audio::{self, SoundSource},
     context::Context,
     event::{self, EventHandler},
-    graphics::{self, Color, DrawMode, DrawParam, Image, Rect},
-    input::keyboard::{KeyCode, KeyMods},
+    graphics::{self, Color, DrawMode, DrawParam, Image, Mesh, Rect, Text},
+    input::keyboard::{KeyCode, KeyInput},
     mint::Point2,
-    timer, GameError, GameResult,
+    GameResult,
 };
 use std::path::PathBuf;
 
@@ -59,19 +59,19 @@ struct GameState {
     rebel_ship_image: Image,
     imperial_ship_image: Image,
     background_image: Image,
-    bullet_hit_sound: Source,
-    bullet_fire_sound: Source,
+    bullet_hit_sound: audio::Source,
+    bullet_fire_sound: audio::Source,
     game_over: bool,
     winner: Option<String>,
 }
 
-impl EventHandler<GameError> for GameState {
+impl EventHandler for GameState {
     fn update(&mut self, ctx: &mut Context) -> GameResult {
         // Limit frame rate
-        while timer::check_update_time(ctx, FPS) {
+        while ctx.time.check_update_time(FPS) {
             // Handle bullet movement and collision
-            self.update_rebel_bullets();
-            self.update_imperial_bullets();
+            self.update_rebel_bullets(ctx);
+            self.update_imperial_bullets(ctx);
 
             // Check for game over conditions
             if self.rebel.health <= 0 {
@@ -87,96 +87,92 @@ impl EventHandler<GameError> for GameState {
     }
 
     fn draw(&mut self, ctx: &mut Context) -> GameResult {
-        // Clear the screen
-        graphics::clear(ctx, Color::BLACK);
+        // Create a new canvas for drawing
+        let mut canvas = graphics::Canvas::from_frame(ctx, Color::BLACK);
 
         // Draw background
-        graphics::draw(ctx, &self.background_image, DrawParam::default())?;
+        canvas.draw(&self.background_image, DrawParam::default());
 
         // Draw border
-        let border_rect = graphics::Rect::new(WINDOW_WIDTH / 2.0 - 5.0, 0.0, 10.0, WINDOW_HEIGHT);
-        let border_mesh =
-            graphics::Mesh::new_rectangle(ctx, DrawMode::fill(), border_rect, Color::BLACK)?;
-        graphics::draw(ctx, &border_mesh, DrawParam::default())?;
+        let border_rect = Rect::new(WINDOW_WIDTH / 2.0 - 5.0, 0.0, 10.0, WINDOW_HEIGHT);
+        let border_mesh = Mesh::new_rectangle(ctx, DrawMode::fill(), border_rect, Color::BLACK)?;
+        canvas.draw(&border_mesh, DrawParam::default());
 
         // Draw spaceships
-        graphics::draw(
-            ctx,
+        canvas.draw(
             &self.rebel_ship_image,
             DrawParam::default().dest(Point2 {
                 x: self.rebel.x,
                 y: self.rebel.y,
             }),
-        )?;
-        graphics::draw(
-            ctx,
+        );
+        canvas.draw(
             &self.imperial_ship_image,
             DrawParam::default().dest(Point2 {
                 x: self.imperial.x,
                 y: self.imperial.y,
             }),
-        )?;
+        );
 
         // Draw bullets
         for bullet in &self.rebel_bullets {
-            let bullet_rect = graphics::Rect::new(bullet.x, bullet.y, bullet.width, bullet.height);
-            let bullet_mesh =
-                graphics::Mesh::new_rectangle(ctx, DrawMode::fill(), bullet_rect, Color::BLUE)?;
-            graphics::draw(ctx, &bullet_mesh, DrawParam::default())?;
+            let bullet_rect = Rect::new(bullet.x, bullet.y, bullet.width, bullet.height);
+            let bullet_mesh = Mesh::new_rectangle(ctx, DrawMode::fill(), bullet_rect, Color::BLUE)?;
+            canvas.draw(&bullet_mesh, DrawParam::default());
         }
 
         for bullet in &self.imperial_bullets {
-            let bullet_rect = graphics::Rect::new(bullet.x, bullet.y, bullet.width, bullet.height);
-            let bullet_mesh =
-                graphics::Mesh::new_rectangle(ctx, DrawMode::fill(), bullet_rect, Color::RED)?;
-            graphics::draw(ctx, &bullet_mesh, DrawParam::default())?;
+            let bullet_rect = Rect::new(bullet.x, bullet.y, bullet.width, bullet.height);
+            let bullet_mesh = Mesh::new_rectangle(ctx, DrawMode::fill(), bullet_rect, Color::RED)?;
+            canvas.draw(&bullet_mesh, DrawParam::default());
         }
 
         // Draw health
-        let health_text = graphics::Text::new(format!("Rebel Health: {}", self.rebel.health));
-        graphics::draw(
-            ctx,
+        let health_text = Text::new(format!("Rebel Health: {}", self.rebel.health));
+        canvas.draw(
             &health_text,
             DrawParam::default().dest(Point2 { x: 10.0, y: 10.0 }),
-        )?;
+        );
 
-        let imperial_health_text =
-            graphics::Text::new(format!("Imperial Health: {}", self.imperial.health));
-        graphics::draw(
-            ctx,
+        let imperial_health_text = Text::new(format!("Imperial Health: {}", self.imperial.health));
+        canvas.draw(
             &imperial_health_text,
             DrawParam::default().dest(Point2 {
                 x: WINDOW_WIDTH - 200.0,
                 y: 10.0,
             }),
-        )?;
+        );
 
         // Draw game over message if game is over
         if self.game_over {
             if let Some(winner) = &self.winner {
-                let game_over_text = graphics::Text::new(winner.clone());
-                graphics::draw(
-                    ctx,
+                let game_over_text = Text::new(winner.clone());
+                canvas.draw(
                     &game_over_text,
                     DrawParam::default().dest(Point2 {
                         x: WINDOW_WIDTH / 2.0 - 100.0,
                         y: WINDOW_HEIGHT / 2.0,
                     }),
-                )?;
+                );
             }
         }
 
-        graphics::present(ctx)?;
+        // Finish drawing and present to screen
+        canvas.finish(ctx)?;
         Ok(())
     }
 
     fn key_down_event(
         &mut self,
         ctx: &mut Context,
-        keycode: KeyCode,
-        _keymods: KeyMods,
-        _repeat: bool,
+        input: KeyInput,
+        _repeated: bool,
     ) -> GameResult {
+        let keycode = match input.keycode {
+            Some(keycode) => keycode,
+            None => return Ok(()),
+        };
+
         match keycode {
             // Imperial ship controls (WASD)
             KeyCode::A => {
@@ -232,7 +228,9 @@ impl EventHandler<GameError> for GameState {
                         height: 5.0,
                     };
                     self.imperial_bullets.push(new_bullet);
-                    // Note: Sound playback would be handled here in a full implementation
+                    // Play sound
+                    let _ = self.bullet_fire_sound.play(ctx);
+                    self.bullet_fire_sound.set_volume(0.5);
                 }
             }
 
@@ -246,7 +244,9 @@ impl EventHandler<GameError> for GameState {
                         height: 5.0,
                     };
                     self.rebel_bullets.push(new_bullet);
-                    // Note: Sound playback would be handled here in a full implementation
+                    // Play sound
+                    let _ = self.bullet_fire_sound.play(ctx);
+                    self.bullet_fire_sound.set_volume(0.5);
                 }
             }
 
@@ -257,73 +257,89 @@ impl EventHandler<GameError> for GameState {
 }
 
 impl GameState {
-    fn update_rebel_bullets(&mut self) {
-        self.rebel_bullets.retain(|bullet| {
-            let mut keep = true;
+    fn update_rebel_bullets(&mut self, ctx: &mut Context) {
+        let mut bullets_to_remove = Vec::new();
 
+        for (i, bullet) in self.rebel_bullets.iter_mut().enumerate() {
             // Move bullet
-            let mut new_bullet = *bullet;
-            new_bullet.x -= BULLET_VEL;
+            bullet.x -= BULLET_VEL;
 
             // Check collision with imperial ship
-            if self.imperial.intersects(&new_bullet) {
+            if self.imperial.intersects(bullet) {
                 self.imperial.health -= 1;
-                keep = false;
+                bullets_to_remove.push(i);
+                // Play hit sound
+                let _ = self.bullet_hit_sound.play(ctx);
+                self.bullet_hit_sound.set_volume(0.5);
             }
 
             // Remove if out of bounds
-            if new_bullet.x < 0.0 {
-                keep = false;
+            if bullet.x < 0.0 {
+                bullets_to_remove.push(i);
             }
+        }
 
-            keep
-        });
+        // Remove bullets in reverse order to avoid index shifting
+        bullets_to_remove.sort_by(|a, b| b.cmp(a));
+        for i in bullets_to_remove {
+            self.rebel_bullets.remove(i);
+        }
     }
 
-    fn update_imperial_bullets(&mut self) {
-        self.imperial_bullets.retain(|bullet| {
-            let mut keep = true;
+    fn update_imperial_bullets(&mut self, ctx: &mut Context) {
+        let mut bullets_to_remove = Vec::new();
 
+        for (i, bullet) in self.imperial_bullets.iter_mut().enumerate() {
             // Move bullet
-            let mut new_bullet = *bullet;
-            new_bullet.x += BULLET_VEL;
+            bullet.x += BULLET_VEL;
 
             // Check collision with rebel ship
-            if self.rebel.intersects(&new_bullet) {
+            if self.rebel.intersects(bullet) {
                 self.rebel.health -= 1;
-                keep = false;
+                bullets_to_remove.push(i);
+                // Play hit sound
+                let _ = self.bullet_hit_sound.play(ctx);
+                self.bullet_hit_sound.set_volume(0.5);
             }
 
             // Remove if out of bounds
-            if new_bullet.x > WINDOW_WIDTH {
-                keep = false;
+            if bullet.x > WINDOW_WIDTH {
+                bullets_to_remove.push(i);
             }
+        }
 
-            keep
-        });
+        // Remove bullets in reverse order to avoid index shifting
+        bullets_to_remove.sort_by(|a, b| b.cmp(a));
+        for i in bullets_to_remove {
+            self.imperial_bullets.remove(i);
+        }
     }
 }
 
 fn main() -> GameResult {
     let resource_dir = PathBuf::from("./assets");
 
-    let context_builder = ggez::ContextBuilder::new("snake_invaders", "carlos_juan")
-        .window_setup(ggez::conf::WindowSetup::default().title("Snake Invaders"))
+    let context_builder = ggez::ContextBuilder::new("star_wars_rust", "carlos_juan")
+        .window_setup(ggez::conf::WindowSetup::default().title("Star Wars Rust Battle"))
         .window_mode(ggez::conf::WindowMode::default().dimensions(WINDOW_WIDTH, WINDOW_HEIGHT))
         .add_resource_path(resource_dir);
 
-    let (mut ctx, event_loop) = context_builder.build()?;
+    let (ctx, event_loop) = context_builder.build()?;
+
+    // Load audio
+    let bullet_hit_sound = audio::Source::new(&ctx, "/explosion.mp3")?;
+    let bullet_fire_sound = audio::Source::new(&ctx, "/laser.mp3")?;
 
     let state = GameState {
         rebel: Spaceship::new(1400.0, 400.0, 80.0, 65.0),
         imperial: Spaceship::new(50.0, 400.0, 80.0, 65.0),
         rebel_bullets: Vec::new(),
         imperial_bullets: Vec::new(),
-        rebel_ship_image: Image::new(&mut ctx, "/rebel_spaceship.png")?,
-        imperial_ship_image: Image::new(&mut ctx, "/imperial_spaceship.png")?,
-        background_image: Image::new(&mut ctx, "/bg_version_2.jpg")?,
-        bullet_hit_sound: Source::new(&mut ctx, "/explosion.mp3")?,
-        bullet_fire_sound: Source::new(&mut ctx, "/laser.mp3")?,
+        rebel_ship_image: Image::from_path(&ctx, "/rebel_spaceship.png")?,
+        imperial_ship_image: Image::from_path(&ctx, "/imperial_spaceship.png")?,
+        background_image: Image::from_path(&ctx, "/bg_version_2.jpg")?,
+        bullet_hit_sound,
+        bullet_fire_sound,
         game_over: false,
         winner: None,
     };

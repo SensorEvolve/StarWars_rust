@@ -1,0 +1,12 @@
+/Users/ethereum/Developer/StarWars_rust/target/debug/deps/libgif-7c3641bb947f454b.rmeta: /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/traits.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/common.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/reader/mod.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/reader/decoder.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/reader/converter.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/encoder.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/../README.md
+
+/Users/ethereum/Developer/StarWars_rust/target/debug/deps/gif-7c3641bb947f454b.d: /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/traits.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/common.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/reader/mod.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/reader/decoder.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/reader/converter.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/encoder.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/../README.md
+
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/lib.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/traits.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/common.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/reader/mod.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/reader/decoder.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/reader/converter.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/encoder.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gif-0.13.1/src/../README.md:

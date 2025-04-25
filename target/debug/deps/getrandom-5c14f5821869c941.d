@@ -1,0 +1,10 @@
+/Users/ethereum/Developer/StarWars_rust/target/debug/deps/libgetrandom-5c14f5821869c941.rmeta: /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/error.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/util.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/error_impls.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/util_libc.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/getentropy.rs
+
+/Users/ethereum/Developer/StarWars_rust/target/debug/deps/getrandom-5c14f5821869c941.d: /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/error.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/util.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/error_impls.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/util_libc.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/getentropy.rs
+
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/lib.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/error.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/util.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/error_impls.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/util_libc.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.15/src/getentropy.rs:

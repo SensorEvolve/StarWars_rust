@@ -1,8 +1,8 @@
 [package]
-name = "snakeRUST"
+name = "star_wars_rust"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-ggez = "0.8.1"
+ggez = "0.9.3"
 mint = "0.5.9"

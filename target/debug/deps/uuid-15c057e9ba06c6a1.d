@@ -1,0 +1,12 @@
+/Users/ethereum/Developer/StarWars_rust/target/debug/deps/libuuid-15c057e9ba06c6a1.rmeta: /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/builder.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/error.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/parser.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/fmt.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/timestamp.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/external.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/macros.rs
+
+/Users/ethereum/Developer/StarWars_rust/target/debug/deps/uuid-15c057e9ba06c6a1.d: /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/lib.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/builder.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/error.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/parser.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/fmt.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/timestamp.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/external.rs /Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/macros.rs
+
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/lib.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/builder.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/error.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/parser.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/fmt.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/timestamp.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/external.rs:
+/Users/ethereum/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.11.0/src/macros.rs:
